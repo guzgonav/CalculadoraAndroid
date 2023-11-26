@@ -99,10 +99,10 @@ public class MainActivity extends AppCompatActivity {
                     double result = performOperation(numbers[0], numbers[1], operator);
 
                     // Muestra el resultado en la interfaz de usuario
-                    output_text.setText(cutDecimal(Double.toString(result)));
+                    output_text.setText(roundNumber(Double.toString(result)));
 
                     // Actualiza la entrada con el resultado
-                    input = Double.toString(result);
+                    input = roundNumber(Double.toString(result));
 
                 } catch (NumberFormatException e) {
                     // Manejo de errores durante la conversión
@@ -172,14 +172,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
-    private String cutDecimal (String number){
-        String n [] = number.split("\\.");
-        if (n.length > 1){
-            if (n[1].equals("0")){
-                number = n[0];
-            }
+    private String roundNumber(String number) {
+        try {
+            double parsedNumber = Double.parseDouble(number);
+            double roundedNumber = Math.round(parsedNumber * 10000.0) / 10000.0;
+            return Double.toString(roundedNumber);
+        } catch (NumberFormatException e) {
+            // Si la conversión no es posible, muestra un mensaje de errorwe
+            return "Error: Formato de número no válido";
         }
-        return number;
     }
 }
