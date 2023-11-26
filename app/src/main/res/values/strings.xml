@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Practica1</string>
+    <string name="tituloPrograma">CALCULADORA</string>
+    <string name="button_suma">+</string>
+    <string name="textview2">TextView</string>
+    <string name="button_resta">-</string>
+    <string name="button_multi">*</string>
+    <string name="button_div">/</string>
+    <string name="button_zero">0</string>
+    <string name="button_one">1</string>
+    <string name="button_two">2</string>
+    <string name="button_three">3</string>
+    <string name="button_four">4</string>
+    <string name="button_five">5</string>
+    <string name="button_six">6</string>
+    <string name="button_seven">7</string>
+    <string name="button_eight">8</string>
+    <string name="button_nine">9</string>
+    <string name="button_c">C</string>
+    <string name="button_ce">CE</string>
+    <string name="button_equal">=</string>
+
+    <string name="display">Enter in a value</string>
+
+</resources>
