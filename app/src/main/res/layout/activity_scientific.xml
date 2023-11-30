@@ -20,9 +20,10 @@
         android:gravity="bottom" >
 
         <include
-            layout="@layout/buttons"
+            layout="@layout/buttons_scientific"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
     </RelativeLayout>
 </LinearLayout>
+

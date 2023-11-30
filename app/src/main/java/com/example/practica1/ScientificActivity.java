@@ -8,22 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class ScientificActivity extends AppCompatActivity {
 
+    private double input_double;
 
-    TextView input_text, output_text;
-
-    private String input, output, new_output;
-
-    private Button button_zero, button_one, button_two, button_three, button_four, button_five, button_six, button_seven, button_eight,
-            button_nine, button_suma, button_resta, button_multi, button_div, button_ce, button_c, button_equal;
-
-    //Buttons for the activities
-    private Button button_NIA, button_scientific;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_scientific);
 
         input_text = findViewById(R.id.input_text);
         output_text = findViewById(R.id.output_text);
@@ -47,19 +39,44 @@ public class MainActivity extends AppCompatActivity {
         button_equal = findViewById(R.id.button_equal);
 
         button_NIA = findViewById(R.id.button_NIA);
-        button_equal = findViewById(R.id.button_scientific);
+        button_calculator = findViewById(R.id.button_calculator);
 
+        //Gets the value from MainActivity
+        String input_string = getIntent().getStringExtra("input");
+
+        if (input_string != null && !input_string.isEmpty()){
+            try{
+                //Converts the value to a double
+                input_double = Double.parseDouble(input_string);
+            } catch (NumberFormatException e){
+                e.printStackTrace();
+            }
+        }
     }
 
+    TextView input_text, output_text;
+
+    private String input, output, new_output;
+
+    private Button button_zero, button_one, button_two, button_three, button_four, button_five, button_six, button_seven, button_eight,
+            button_nine, button_suma, button_resta, button_multi, button_div, button_ce, button_c, button_equal;
+
+    //Buttons for the activities
+    private Button button_NIA, button_calculator;
+
+
     public void onNIAClicked(View view){
-        Intent intent = new Intent(MainActivity.this, NIAActivity.class);
+        Intent intent = new Intent(ScientificActivity.this, NIAActivity.class);
         startActivity(intent);
     }
 
-    public void onScientificClicked(View view){
+    public void onCalculatorClicked(View view){
+        if(input != null && !input.isEmpty()){
             //Passes the input value to the scientific calculator
-            Intent intent = new Intent(MainActivity.this, ScientificActivity.class);
+            Intent intent = new Intent(ScientificActivity.this, MainActivity.class);
             startActivity(intent);
+
+        }
     }
 
     public void onButtonClicked(View view){
@@ -212,4 +229,6 @@ public class MainActivity extends AppCompatActivity {
             return "Error: Formato de número no válido";
         }
     }
+
+
 }
