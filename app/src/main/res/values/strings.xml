@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Practica1</string>
+
+    <!-- Calculadora -->
+    <string name="app_name">Calculadora</string>
     <string name="tituloPrograma">CALCULADORA</string>
     <string name="button_suma">+</string>
     <string name="textview2">TextView</string>
@@ -19,7 +21,24 @@
     <string name="button_c">C</string>
     <string name="button_ce">CE</string>
     <string name="button_equal">=</string>
-
+    <string name="button_point">.</string>
+    <string name="button_scientific">SCIENTIFIC</string>
+    <string name="button_NIA">NIA</string>
+    <string name="button_calculator">CALCULATOR</string>
     <string name="display">Enter in a value</string>
+
+    <!-- Calculadora cientifica -->
+    <string name="button_sin">sin</string>
+    <string name="button_cos">cos</string>
+    <string name="button_tan">tan</string>
+    <string name="button_cosec">csc</string>
+    <string name="button_sec">sec</string>
+    <string name="button_cotg">ctg</string>
+    <string name="button_power">^</string>
+    <string name="button_root">√</string>
+    <string name="button_ln">ln</string>
+    <string name="button_log">log</string>
+    <string name="button_factorial">!</string>
+    <string name="button_todo">TODO</string>
 
 </resources>

@@ -6,16 +6,16 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:rowCount="6"
+        android:rowCount="9"
         android:columnCount="4" >
 
         <Button
-            android:id="@+id/button_one"
+            android:id="@+id/button_cos"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:text="@string/button_one"
+            android:layout_height="60dp"
+            android:text="@string/button_cos"
             android:textColor="@color/black"
-            android:backgroundTint="@color/lightBlue"
+            android:backgroundTint="@color/skyBlue"
             android:textSize="25sp"
             android:layout_row="0"
             android:layout_column="0"
@@ -23,12 +23,12 @@
             android:onClick="onButtonClicked" />
 
         <Button
-            android:id="@+id/button_two"
+            android:id="@+id/button_sin"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:text="@string/button_two"
+            android:layout_height="60dp"
+            android:text="@string/button_sin"
             android:textColor="@color/black"
-            android:backgroundTint="@color/lightBlue"
+            android:backgroundTint="@color/skyBlue"
             android:textSize="25sp"
             android:layout_row="0"
             android:layout_column="1"
@@ -36,12 +36,12 @@
             android:onClick="onButtonClicked" />
 
         <Button
-            android:id="@+id/button_three"
+            android:id="@+id/button_tan"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:text="@string/button_three"
+            android:layout_height="60dp"
+            android:text="@string/button_tan"
             android:textColor="@color/black"
-            android:backgroundTint="@color/lightBlue"
+            android:backgroundTint="@color/skyBlue"
             android:textSize="25sp"
             android:layout_row="0"
             android:layout_column="2"
@@ -49,10 +49,10 @@
             android:onClick="onButtonClicked" />
 
         <Button
-            android:id="@+id/button_suma"
+            android:id="@+id/button_power"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:text="@string/button_suma"
+            android:layout_height="60dp"
+            android:text="@string/button_power"
             android:textColor="@color/black"
             android:backgroundTint="@color/skyBlue"
             android:textSize="25sp"
@@ -62,12 +62,12 @@
             android:onClick="onButtonClicked" />
 
         <Button
-            android:id="@+id/button_four"
+            android:id="@+id/button_csc"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:text="@string/button_four"
+            android:layout_height="60dp"
+            android:text="@string/button_cosec"
             android:textColor="@color/black"
-            android:backgroundTint="@color/lightBlue"
+            android:backgroundTint="@color/skyBlue"
             android:textSize="25sp"
             android:layout_row="1"
             android:layout_column="0"
@@ -75,12 +75,12 @@
             android:onClick="onButtonClicked" />
 
         <Button
-            android:id="@+id/button_five"
+            android:id="@+id/button_sec"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:text="@string/button_five"
+            android:layout_height="60dp"
+            android:text="@string/button_sec"
             android:textColor="@color/black"
-            android:backgroundTint="@color/lightBlue"
+            android:backgroundTint="@color/skyBlue"
             android:textSize="25sp"
             android:layout_row="1"
             android:layout_column="1"
@@ -88,10 +88,166 @@
             android:onClick="onButtonClicked" />
 
         <Button
+            android:id="@+id/button_cotg"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/button_cotg"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/skyBlue"
+            android:textSize="25sp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:onClick="onButtonClicked" />
+
+        <Button
+            android:id="@+id/button_root"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/button_root"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/skyBlue"
+            android:textSize="25sp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:onClick="onButtonClicked" />
+
+        <Button
+            android:id="@+id/button_ln"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/button_ln"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/skyBlue"
+            android:textSize="25sp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:onClick="onButtonClicked" />
+
+        <Button
+            android:id="@+id/button_log"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/button_log"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/skyBlue"
+            android:textSize="25sp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:onClick="onButtonClicked" />
+
+        <Button
+            android:id="@+id/button_factorial"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/button_factorial"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/skyBlue"
+            android:textSize="25sp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:onClick="onButtonClicked" />
+
+        <Button
+            android:id="@+id/button_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="³√"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/skyBlue"
+            android:textSize="25sp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:onClick="onButtonClicked" />
+
+        <Button
+            android:id="@+id/button_one"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/button_one"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/lightBlue"
+            android:textSize="25sp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:onClick="onButtonClicked" />
+
+        <Button
+            android:id="@+id/button_two"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/button_two"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/lightBlue"
+            android:textSize="25sp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:onClick="onButtonClicked" />
+
+        <Button
+            android:id="@+id/button_three"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/button_three"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/lightBlue"
+            android:textSize="25sp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:onClick="onButtonClicked" />
+
+        <Button
+            android:id="@+id/button_suma"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/button_suma"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/skyBlue"
+            android:textSize="25sp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:onClick="onButtonClicked" />
+
+        <Button
+            android:id="@+id/button_four"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/button_four"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/lightBlue"
+            android:textSize="25sp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:onClick="onButtonClicked" />
+
+        <Button
+            android:id="@+id/button_five"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/button_five"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/lightBlue"
+            android:textSize="25sp"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:onClick="onButtonClicked" />
+
+        <Button
             android:id="@+id/button_six"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_row="1"
+            android:layout_height="60dp"
+            android:layout_row="4"
             android:layout_column="2"
             android:layout_columnWeight="1"
             android:backgroundTint="@color/lightBlue"
@@ -103,12 +259,12 @@
         <Button
             android:id="@+id/button_resta"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_height="60dp"
             android:text="@string/button_resta"
             android:textColor="@color/black"
             android:backgroundTint="@color/skyBlue"
             android:textSize="25sp"
-            android:layout_row="1"
+            android:layout_row="4"
             android:layout_column="3"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked" />
@@ -116,12 +272,12 @@
         <Button
             android:id="@+id/button_seven"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_height="60dp"
             android:text="@string/button_seven"
             android:textColor="@color/black"
             android:backgroundTint="@color/lightBlue"
             android:textSize="25sp"
-            android:layout_row="2"
+            android:layout_row="5"
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked" />
@@ -129,12 +285,12 @@
         <Button
             android:id="@+id/button_eight"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_height="60dp"
             android:text="@string/button_eight"
             android:textColor="@color/black"
             android:backgroundTint="@color/lightBlue"
             android:textSize="25sp"
-            android:layout_row="2"
+            android:layout_row="5"
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked" />
@@ -142,12 +298,12 @@
         <Button
             android:id="@+id/button_nine"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_height="60dp"
             android:text="@string/button_nine"
             android:textColor="@color/black"
             android:backgroundTint="@color/lightBlue"
             android:textSize="25sp"
-            android:layout_row="2"
+            android:layout_row="5"
             android:layout_column="2"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked" />
@@ -155,12 +311,12 @@
         <Button
             android:id="@+id/button_multi"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_height="60dp"
             android:text="@string/button_multi"
             android:textColor="@color/black"
             android:backgroundTint="@color/skyBlue"
             android:textSize="25sp"
-            android:layout_row="2"
+            android:layout_row="5"
             android:layout_column="3"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked" />
@@ -168,12 +324,12 @@
         <Button
             android:id="@+id/button_ce"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_height="60dp"
             android:text="@string/button_ce"
             android:textColor="@color/black"
             android:backgroundTint="@color/skyBlue"
             android:textSize="25sp"
-            android:layout_row="3"
+            android:layout_row="6"
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked" />
@@ -181,12 +337,12 @@
         <Button
             android:id="@+id/button_zero"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_height="60dp"
             android:text="@string/button_zero"
             android:textColor="@color/black"
             android:backgroundTint="@color/lightBlue"
             android:textSize="25sp"
-            android:layout_row="3"
+            android:layout_row="6"
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked" />
@@ -194,8 +350,8 @@
         <Button
             android:id="@+id/button_c"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_row="3"
+            android:layout_height="60dp"
+            android:layout_row="6"
             android:layout_column="2"
             android:layout_columnWeight="1"
             android:backgroundTint="@color/skyBlue"
@@ -207,12 +363,12 @@
         <Button
             android:id="@+id/button_div"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_height="60dp"
             android:text="@string/button_div"
             android:textColor="@color/black"
             android:backgroundTint="@color/skyBlue"
             android:textSize="25sp"
-            android:layout_row="3"
+            android:layout_row="6"
             android:layout_column="3"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked" />
@@ -220,8 +376,8 @@
         <Button
             android:id="@+id/button_equal"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_row="4"
+            android:layout_height="60dp"
+            android:layout_row="7"
             android:layout_column="0"
             android:layout_columnSpan="3"
             android:backgroundTint="@color/skyBlueDark"
@@ -234,43 +390,42 @@
         <Button
             android:id="@+id/button_point"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_height="60dp"
             android:text="@string/button_point"
             android:textColor="@color/black"
             android:backgroundTint="@color/skyBlue"
             android:textSize="25sp"
-            android:layout_row="4"
+            android:layout_row="7"
             android:layout_column="3"
             android:layout_columnWeight="1"
             android:onClick="onButtonClicked" />
 
         <Button
-            android:id="@+id/button_scientific"
+            android:id="@+id/button_calculator"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_row="5"
+            android:layout_height="60dp"
+            android:layout_row="8"
             android:layout_column="0"
             android:layout_columnSpan="2"
             android:layout_columnWeight="1"
             android:backgroundTint="@color/skyBlueDark"
-            android:onClick="onScientificClicked"
-            android:text="@string/button_scientific"
+            android:onClick="onCalculatorClicked"
+            android:text="@string/button_calculator"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/button_NIA"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:text="NIA"
             android:textColor="@color/black"
             android:backgroundTint="@color/skyBlueDark"
             android:textSize="25sp"
-            android:layout_row="5"
+            android:layout_row="8"
             android:layout_columnWeight="1"
             android:layout_columnSpan="2"
             android:onClick="onNIAClicked" />
-
     </GridLayout>
 
 </RelativeLayout>
